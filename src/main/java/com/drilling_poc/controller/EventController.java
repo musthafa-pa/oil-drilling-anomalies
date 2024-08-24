@@ -39,7 +39,7 @@ public class EventController {
     public ResponseEntity<?> publishWellLog(){
         try{
             publisher.sendWellLogInInterval();
-            return ResponseEntity.ok("Sending data to topic from csv is in progress...");
+            return ResponseEntity.ok("Sending data to topic from csv is done...");
         }
         catch (Exception ex){
             System.out.println("Message" + ex.getMessage());
